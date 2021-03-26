@@ -1,0 +1,51 @@
+
+% This work may be distributed and/or modified under the conditions of the
+% LaTeX Project Public License, either version 1.3 of this license or (at
+% your option) any later version.
+% The latest version of this license is in
+%   https://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX version
+% 2005/12/01 or later.
+
+% Derived from pkuthss [https://ctan.org/pkg/pkuthss]
+
+\documentclass{pkusurvey}
+
+
+\pkuthssinfo{
+    cauthor = {某某},
+    studentid = {1234567891},
+    date = {二〇二一年五月},
+    school = {某某学院},
+    cmajor = {某某专业},
+    direction = {某某方向},
+    cmentor = {某某教授}
+}
+
+\addbibresource{thesis.bib}
+
+
+\begin{document}
+
+\pagenumbering{arabic}
+\pagestyle{empty}
+\maketitle
+\clearpage
+\pagestyle{plain}
+\cleardoublepage
+
+
+
+\include{chap/abs}
+
+\tableofcontents
+
+
+\include{chap/chap1}
+\include{chap/chap2}
+\include{chap/chap3}
+\include{chap/chap4}
+\include{chap/chap5}
+
+\end{document}
+
