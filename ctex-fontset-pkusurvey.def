@@ -1,14 +1,14 @@
 \ProvidesExplFile{\ExplFileName}{}{}{}
 
-\setCJKmainfont{simsun.ttc}[BoldFont=simhei.ttf,ItalicFont=simkai.ttf,Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKsansfont{simhei.ttf}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKmonofont{simfang.ttf}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKfamilyfont{zhsong}{simsun.ttc}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKfamilyfont{zhhei}{simhei.ttf}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKfamilyfont{zhkai}{simkai.ttf}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKfamilyfont{zhfs}{simfang.ttf}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKfamilyfont{zhli}{simli.ttf}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
-\setCJKfamilyfont{zhyou}{simyou.ttf}[Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKmainfont{simsun.ttc}[Extension={.ttc},BoldFont=simhei.ttf,ItalicFont=simkai.ttf,Path=font/,AutoFakeBold=4,AutoFakeSlant=0.3]
+\setCJKsansfont{simhei.ttf}[Extension={.ttf},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKmonofont{simfang.ttf}[Extension={.ttf},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKfamilyfont{zhsong}{simsun.ttc}[Extension={.ttc},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKfamilyfont{zhhei}{simhei.ttf}[Extension={.ttf},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKfamilyfont{zhkai}{simkai.ttf}[Extension={.ttf},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKfamilyfont{zhfs}{simfang.ttf}[Extension={.ttf},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKfamilyfont{zhli}{simli.ttf}[Extension={.ttf},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
+\setCJKfamilyfont{zhyou}{simyou.ttf}[Extension={.ttf},Path=font/,AutoFakeBold=3,AutoFakeSlant=0.3]
 
 \NewDocumentCommand\songti{}{\CJKfamily{zhsong}}
 \NewDocumentCommand\heiti{}{\CJKfamily{zhhei}}
@@ -18,3 +18,4 @@
 \NewDocumentCommand\youyuan{}{\CJKfamily{zhyou}}
 
 \endinput
+

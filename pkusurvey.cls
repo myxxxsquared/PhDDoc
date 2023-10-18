@@ -59,10 +59,11 @@
 \def\label@cmajor{专\hphantom{汉字}业：}
 \def\label@direction{研究方向：}
 \def\label@cmentor{导\hphantom{汉字}师：}
+\def\label@ementor{协助指导：}
 
 \def\titlepagename{封面}
 \def\cuniversity{北京大学}
-\def\cthesisname{博士学位研究生学科综合考试报告}
+\def\cthesisname{博士学位论文开题报告}
 \def\cabstractname{摘要}
 \def\cabstractnameshow{摘　要}
 
@@ -106,12 +107,14 @@
 }
 
 \thss@int@infoitema{cauthor}
+\thss@int@infoitema{ctitle}
 \thss@int@infoitema{studentid}
 \thss@int@infoitema{date}
 \thss@int@infoitema{school}
 \thss@int@infoitema{cmajor}
 \thss@int@infoitema{direction}
 \thss@int@infoitema{cmentor}
+\thss@int@infoitema{ementor}
 \thss@int@infoitema{ckeywords}
 \thss@int@infoitemb{cuniversity}
 \thss@int@infoitemb{cthesisname}
@@ -196,9 +199,12 @@
             \raisebox{0.4em}{\includegraphics[height = 2.25cm]{pkuword}}\\[0.8em]
             {\bfseries{\cthesisname}}
         }
-        
-        \vspace{2.6cm}
-
+        \vfill
+        {%
+            \zihao{2}\linespread{1.6}\selectfont{\label@ctitle}%
+            \thss@int@fillinblank{2}{0.7\textwidth}{\heiti{\zihao{1}\@ctitle}}%
+        }
+        \vfill
         {
             \zihao{3}\linespread{2.1}\selectfont
             \def\thss@tmp@len{0.45\textwidth}
@@ -215,11 +221,11 @@
                 \thss@int@fillinblank{1}{\thss@tmp@len}{\kaishu\@direction}    \\
                 {\bfseries\label@cmentor}        &
                 \thss@int@fillinblank{1}{\thss@tmp@len}{\kaishu\@cmentor}        \\
+                {\bfseries\label@ementor}        &
+                \thss@int@fillinblank{1}{\thss@tmp@len}{\kaishu\@ementor}        \\
             \end{tabular}
         }
-
-        \vspace{5cm}
-
+        \vfill
         {\zihao{4}\heiti\@date}
     \par\endgroup
 }
